@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cars for Sale — Exclusive Car Rental</title>
+  <link rel="icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Exclusive Car Rental">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#fleet">Rent a Car</a></li>
+    <li><a href="sales.html" class="active">Cars for Sale</a></li>
+    <li><a href="index.html#how">How It Works</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="https://wa.me/5978906680" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#fleet" onclick="toggleMenu()">Rent a Car</a>
+  <a href="sales.html" onclick="toggleMenu()">Cars for Sale</a>
+  <a href="index.html#how" onclick="toggleMenu()">How It Works</a>
+  <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+  <a href="https://wa.me/5978906680" target="_blank">📲 Book on WhatsApp</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-badge">✦ Quality Used Cars</div>
+  <h1>CARS FOR <span class="accent">SALE</span></h1>
+  <p>Looking to buy instead of rent? Browse our current lineup of quality used vehicles — all inspected and ready for a new owner.</p>
+</section>
+
+<!-- SALE GRID -->
+<section id="sale-grid-section">
+  <div class="fleet-header">
+    <div>
+      <div class="section-label">Available Now</div>
+      <h2 class="section-title">VEHICLES FOR SALE</h2>
+      <p class="section-sub">Click any car for full specs, condition details, and more photos.</p>
+    </div>
+  </div>
+
+  <div class="cars-grid" id="salesGrid">
+    <!-- populated by script -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div style="text-align:center;">
+    <div class="section-label" style="justify-content:center;">Get In Touch</div>
+    <h2 class="section-title">INTERESTED IN A CAR?</h2>
+    <p class="section-sub" style="margin: 0 auto;">Reach out and we'll help you find the right fit.</p>
+  </div>
+
+  <div class="contact-wrapper">
+    <div class="contact-info reveal">
+      <h3>Reach Us Directly</h3>
+      <p>Ask about a specific vehicle, request more photos, or arrange a viewing — just send a message. We'll respond quickly!</p>
+      <div class="social-btns">
+        <a href="https://wa.me/5978906680" target="_blank" class="social-btn whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <div class="social-btn-text">
+            Chat on WhatsApp
+            <small>+597 890-6680</small>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/share/1Eqevfsc1A/?mibextid=wwXIfr" target="_blank" class="social-btn facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          <div class="social-btn-text">
+            Follow on Facebook
+            <small>Exclusive Car Rental</small>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-card reveal" style="transition-delay:0.15s">
+      <h4>Business Info</h4>
+      <div class="contact-row">
+        <span class="contact-row-icon">📍</span>
+        <div><strong>Location</strong>Paramaribo, Suriname</div>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-icon">📱</span>
+        <div><strong>WhatsApp</strong><a href="https://wa.me/5978906680" style="color:var(--green); text-decoration:none;">+597 890-6680</a></div>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-icon">📘</span>
+        <div><strong>Facebook</strong><a href="https://www.facebook.com/share/1Eqevfsc1A/?mibextid=wwXIfr" target="_blank" style="color:var(--green); text-decoration:none;">Exclusive Car Rental</a></div>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-icon">🕐</span>
+        <div><strong>Availability</strong>7 days a week, by appointment</div>
+      </div>
+      <a href="https://wa.me/5978906680?text=Hi! I'm interested in one of your cars for sale." target="_blank" class="btn-primary" style="width:100%; justify-content:center; margin-top:0.5rem;">
+        Ask About a Car 🚗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">EXCLUSIVE <span>CAR RENTAL</span></div>
+  <div>© 2026 Exclusive Car Rental · Paramaribo, Suriname</div>
+  <div style="display:flex; gap:1rem;">
+    <a href="https://www.facebook.com/share/1Eqevfsc1A/?mibextid=wwXIfr" target="_blank" style="color:var(--muted); font-size:1.2rem; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#1877f2'" onmouseout="this.style.color='var(--muted)'">𝒇</a>
+    <a href="https://wa.me/5978906680" target="_blank" style="color:var(--muted); font-size:1rem; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#25d366'" onmouseout="this.style.color='var(--muted)'">📲</a>
+  </div>
+</footer>
+
+<script src="cars-data.js"></script>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // Build sale cards from CARS.sales
+  const grid = document.getElementById('salesGrid');
+  const saleCars = CARS.sales;
+  let i = 0;
+  for (const id in saleCars) {
+    const car = saleCars[id];
+    const cover = `img/sales/${id}/${car.images[0]}`;
+    const card = document.createElement('a');
+    card.href = `car-detail.html?type=sales&id=${id}`;
+    card.className = 'car-card reveal visible';
+    card.style.animationDelay = `${0.05 + i * 0.05}s`;
+    card.innerHTML = `
+      <div class="car-image">
+        <div class="car-tag for-sale">For Sale</div>
+        <img src="${cover}" alt="${car.name}">
+        <div class="photo-count">📷 ${car.images.length}</div>
+      </div>
+      <div class="car-body">
+        <div class="car-name">${car.name}</div>
+        <div class="car-desc">${car.tagline}</div>
+        <div class="car-specs">
+          <span class="spec">${car.year}</span>
+          <span class="spec">${car.mileage}</span>
+          <span class="spec">${car.condition}</span>
+        </div>
+        <div class="car-footer">
+          <div class="car-price sale-price">${car.price}</div>
+          <span class="btn-rent sale-btn">View Details</span>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+    i++;
+  }
+</script>
+
+</body>
+</html>
