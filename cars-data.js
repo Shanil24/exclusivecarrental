@@ -38,9 +38,9 @@ const CARS = {
       categoryLabel: "Compact",
       tagline: "Sporty compact hatchback",
       price: "€60",
-      deposit: "€300",
       priceUnit: "/ day",
       specs: [
+        { label: "Deposit", value: "€300" },
         { label: "Fuel", value: "Efficient" },
         { label: "Transmission", value: "Automatic" },
         { label: "Seats", value: "5" },
