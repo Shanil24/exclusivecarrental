@@ -32,12 +32,13 @@ const CARS = {
       images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
     },
 
-    toyotaist: {
-      name: "Toyota IST",
+    toyotachr: {
+      name: "Toyota CH-R",
       category: "compact",
       categoryLabel: "Compact",
       tagline: "Sporty compact hatchback",
-      price: "Contact for Price",
+      price: "€60",
+      deposit: "€300",
       priceUnit: "/ day",
       specs: [
         { label: "Fuel", value: "Efficient" },
@@ -45,7 +46,7 @@ const CARS = {
         { label: "Seats", value: "5" },
         { label: "Type", value: "Hatchback" },
       ],
-      description: "A sporty compact hatchback with a roomy interior and smooth ride, great for all occasions.",
+      description: "A sporty compact hatchback with a roomy interior and smooth ride, great for all occasions. You can rent one starting at €50",
       images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
     },
 
