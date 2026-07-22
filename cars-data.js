@@ -55,9 +55,10 @@ const CARS = {
       category: "suv",
       categoryLabel: "Suv",
       tagline: "Tall-body, extra cargo space",
-      price: "Contact for Price",
+      price: "€55",
       priceUnit: "/ day",
       specs: [
+        { label: "Deposit", value: "€300" },
         { label: "Cargo", value: "Spacious" },
         { label: "Transmission", value: "Automatic" },
         { label: "Seats", value: "5" },
