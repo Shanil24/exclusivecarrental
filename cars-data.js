@@ -50,10 +50,10 @@ const CARS = {
       images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
     },
 
-    toyotaractis: {
-      name: "Toyota Ractis",
-      category: "compact",
-      categoryLabel: "Compact",
+    toyotaharrier: {
+      name: "Toyota Harrier",
+      category: "suv",
+      categoryLabel: "Suv",
       tagline: "Tall-body, extra cargo space",
       price: "Contact for Price",
       priceUnit: "/ day",
