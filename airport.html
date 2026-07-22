@@ -11,11 +11,21 @@
     /* page-specific tweaks, kept small and scoped to this page */
     .route-strip {
       max-width: 1000px;
-      margin: 2.5rem auto 0;
+      margin: 1rem auto 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
       padding: 0 5%;
+    }
+    .route-direction-title {
+      max-width: 1000px;
+      margin: 2.5rem auto 0;
+      padding: 0 5%;
+      text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 1.5px;
+      color: var(--green);
     }
     .route-card {
       background: var(--card-bg);
@@ -77,12 +87,13 @@
   <p>We drive you between Paramaribo and Johan Adolf Pengel International Airport (Zanderij) — comfortable, on time, both ways.</p>
 </section>
 
-<!-- ROUTE INFO STRIP -->
+<!-- ROUTE INFO STRIPS -->
+<div class="route-direction-title">✈️ Departure — Paramaribo → Zanderij</div>
 <div class="route-strip">
   <div class="route-card">
     <div class="icon">📍</div>
     <div class="label">Route</div>
-    <div class="value">Paramaribo ⇄ Zanderij</div>
+    <div class="value">Paramaribo → Zanderij</div>
   </div>
   <div class="route-card">
     <div class="icon">📏</div>
@@ -95,7 +106,27 @@
     <div class="value">~45–60 min</div>
   </div>
 </div>
-<p class="route-map-note">Johan Adolf Pengel International Airport (JAP) is located in Zanderij, roughly 45 minutes to an hour south of Paramaribo depending on traffic and pickup location.</p>
+<p class="route-map-note">We pick you up in Paramaribo and drop you off at Johan Adolf Pengel International Airport (JAP) in Zanderij. For international flights, we recommend leaving at least 3 hours before departure.</p>
+
+<div class="route-direction-title" style="margin-top:2.5rem;">🛬 Arrival — Zanderij → Paramaribo</div>
+<div class="route-strip">
+  <div class="route-card">
+    <div class="icon">📍</div>
+    <div class="label">Route</div>
+    <div class="value">Zanderij → Paramaribo</div>
+  </div>
+  <div class="route-card">
+    <div class="icon">📏</div>
+    <div class="label">Distance</div>
+    <div class="value">~45 km</div>
+  </div>
+  <div class="route-card">
+    <div class="icon">⏱️</div>
+    <div class="label">Drive Time</div>
+    <div class="value">~45–60 min</div>
+  </div>
+</div>
+<p class="route-map-note">We track your flight's arrival and meet you at Zanderij airport, then drive you back into Paramaribo — even if your flight is delayed, your driver will be there.</p>
 
 <!-- VEHICLE FLEET -->
 <section id="sale-grid-section">
