@@ -62,7 +62,7 @@ const CARS = {
         { label: "Cargo", value: "Spacious" },
         { label: "Transmission", value: "Automatic" },
         { label: "Seats", value: "5" },
-        { label: "Type", value: "Compact MPV" },
+        { label: "Type", value: "Compact SUV" },
       ],
       description: "Tall-body compact with surprising cargo space. Ideal for families and weekend trips.",
       images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
