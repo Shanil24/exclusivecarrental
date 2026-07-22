@@ -209,7 +209,64 @@ const CARS = {
     },
 
   },
+
+/* ───────────── AIRPORT SERVICE VEHICLES ─────────────
+     Used on airport.html for the Paramaribo <-> Zanderij
+     (Johan Adolf Pengel Int'l Airport) transfer service.
+  */
+  airport: {
+
+    sedan: {
+      name: "Sedan Transfer",
+      categoryLabel: "Sedan / Compact",
+      tagline: "Comfortable ride for solo travelers & couples",
+      price: "Contact for Price",
+      priceUnit: "/ trip",
+      specs: [
+        { label: "Capacity", value: "1–3 Passengers" },
+        { label: "Luggage", value: "2–3 Bags" },
+        { label: "Ideal For", value: "Solo & Couples" },
+        { label: "A/C", value: "Yes" },
+      ],
+      description: "A comfortable, air-conditioned sedan for a quick and relaxed transfer between Paramaribo and Johan Adolf Pengel International Airport (Zanderij). Perfect for solo travelers or couples with light luggage.",
+      images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+    },
+
+    minivan: {
+      name: "Minivan (Hiace)",
+      categoryLabel: "Minivan",
+      tagline: "Great for families & small groups",
+      price: "Contact for Price",
+      priceUnit: "/ trip",
+      specs: [
+        { label: "Capacity", value: "4–8 Passengers" },
+        { label: "Luggage", value: "5–8 Bags" },
+        { label: "Ideal For", value: "Families & Small Groups" },
+        { label: "A/C", value: "Yes" },
+      ],
+      description: "A spacious, air-conditioned minivan with plenty of room for the whole family and their luggage. A smooth, comfortable ride for the trip to or from the airport.",
+      images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+    },
+
+    minibus: {
+      name: "Mini-Bus / Coaster",
+      categoryLabel: "Mini-Bus",
+      tagline: "For larger groups & tour parties",
+      price: "Contact for Price",
+      priceUnit: "/ trip",
+      specs: [
+        { label: "Capacity", value: "9–20 Passengers" },
+        { label: "Luggage", value: "Large Capacity" },
+        { label: "Ideal For", value: "Groups & Tours" },
+        { label: "A/C", value: "Yes" },
+      ],
+      description: "Our largest airport transfer vehicle — ideal for tour groups, larger families, or any party traveling together. Roomy, air-conditioned, and built for the Paramaribo–Zanderij route.",
+      images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+    },
+
+  },
 };
+
 
 /* WhatsApp number used across the whole site */
 const WHATSAPP_NUMBER = "5978906680";
